@@ -2,7 +2,7 @@ public class Employee
 {
     // <Access Modifier> -> public, private, protected
     // Constant  --> <Access Modifier> <DataType> <ConstantName> = <Value>
-    public const double TAX = 0.03;
+    public static double TAX = 0.03;
     // <Access Modifier> -> public, private, protected
     // Fields  --> <Access Modifier> <DataType> <FieldName> = <IntialValue>
     public string FName;
@@ -16,5 +16,7 @@ public class Employee
         Console.WriteLine($"Last Name: {LName}");
         Console.WriteLine($"Wage: {Wage}");
         Console.WriteLine($"Logged Hours: {LoggedHours}");
+        double netSalary = Wage * LoggedHours - (Wage * LoggedHours * TAX);
+        Console.WriteLine($"Net Salary: {netSalary}");
     }
 }

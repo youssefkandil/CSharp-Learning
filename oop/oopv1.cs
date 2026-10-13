@@ -52,10 +52,10 @@ public class OOPV1
     {
         Employee e1 = new Employee();
 
-        e1.FName = "John";
-        e1.LName = "Doe";
-        e1.Wage = 20.5;
-        e1.LoggedHours = 40;
+        e1.FName = Console.ReadLine();
+        e1.LName = Console.ReadLine();
+        e1.Wage = Convert.ToDouble(Console.ReadLine());
+        e1.LoggedHours = Convert.ToDouble(Console.ReadLine());
 
         e1.DisplayInfo();
     }

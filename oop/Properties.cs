@@ -1,23 +1,23 @@
-﻿namespace Properties
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
+﻿// namespace Properties
+// {
+//     internal class Program
+//     {
+//         static void Main(string[] args)
+//         {
 
-            // Properties Promote Encapsulation
-            // Property is a public way to access private field
+//             // Properties Promote Encapsulation
+//             // Property is a public way to access private field
 
 
-            Dollar dollar = new Dollar(1.99m);
-            //dollar.Amount = 1.99m;    // public  set
-            dollar.SetAmount(1.99m);  // private set
-            Console.WriteLine(dollar.Amount);   // get
-            Console.WriteLine(dollar.IsZero);
+//             Dollar dollar = new Dollar(1.99m);
+//             //dollar.Amount = 1.99m;    // public  set
+//             dollar.SetAmount(1.99m);  // private set
+//             Console.WriteLine(dollar.Amount);   // get
+//             Console.WriteLine(dollar.IsZero);
 
-            Console.ReadKey();
-        }
-    }
+//             Console.ReadKey();
+//         }
+//     }
 
     public class Dollar
     {
@@ -65,4 +65,3 @@
 
         private decimal ProcessValue(decimal value) => value <= 0 ? 0 : Math.Round(value, 2); //[1.009 -> 0.01]
     }
-}

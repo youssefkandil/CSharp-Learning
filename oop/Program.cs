@@ -1,17 +1,34 @@
-﻿var ip = new IP(255,255,255,8);
+﻿var stock = new Stock ("Amazon");
 
-var firstSegment = ip[0];
+stock.Price = 100;
 
-ip[0] = 192;
-ip[1] = 168;
-ip[2] = 1;
-ip[3] = 1;
+// lambda expression to handle the event when the price changes
 
-Console.WriteLine(ip.Address);
-// Console.WriteLine(firstSegment);
+stock.OnPriceChanged += (stock, OldPrice) =>
+{
+    if (OldPrice < stock.Price)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+    }
+    else if (OldPrice > stock.Price)
+    {
+        Console.ForegroundColor = ConsoleColor.Red; 
+    }
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.White;
+    }
+    Console.WriteLine($"The price of {stock.Name} has increased from {OldPrice} to {stock.Price}");
+};
 
 
-var ip2 = new IP("123.123.123.123");
 
-Console.WriteLine(ip2.Address);
+
+Console.WriteLine($"The price before changing : {stock.Price}");
+
+stock.ChangePriceBy(0.0m);
+
+Console.Write($"The price after changing : {stock.Price}");
+
+
 

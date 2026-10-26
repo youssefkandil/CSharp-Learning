@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
+    "c:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
+    "c:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "projectUniqueName": "c:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
         "projectName": "InventoryManagementSystem",
-        "projectPath": "C:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "projectPath": "c:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\obj\\",
+        "outputPath": "c:\\Users\\Lenovo\\sample\\InventoryManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
